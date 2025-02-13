@@ -9,7 +9,7 @@
 int main() {
     
     
-    char nome[25];
+    int nome[25];
     int populacao;
     int PIB;
     float area;
@@ -30,9 +30,11 @@ int main() {
     printf("digite o PIB: \n");
     scanf("%d", &PIB);
 
-    printf("Nome da cidade: %s  - Area total: %f \n", nome, area);
-    printf("Codigo da cidade: %s", codigo);
-    printf("Populacao: %d - PIB: %d", populacao, PIB);
+    printf("Nome da cidade: %s \n", nome);
+    printf("Area total: %f \n", area);
+    printf("Codigo da cidade: %s \n", codigo);
+    printf("Populacao: %d \n", populacao);
+    printf("PIB: %d \n", PIB);
     
 
 
