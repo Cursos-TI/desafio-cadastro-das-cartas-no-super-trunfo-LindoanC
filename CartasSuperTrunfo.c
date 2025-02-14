@@ -6,37 +6,47 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
+int main() {    
     
-    
-    int nome[25];
-    int populacao;
-    int PIB;
-    float area;
-    char codigo[2];
-    
+    char nome[25];
+    int populacao, PIB, pontosturisticos;
+    float area, PIBpercapita, densidadepopulacional;
+
+    //float quociente = populacao / area;
+   // float quociente2 = PIB / populacao;
+
+        
     printf("Digite o nome da cidade: \n");
     scanf("%s", &nome);
 
-    printf("digite o codigo: \n");
-    scanf("%s", &codigo);
+    printf("Digite a População: \n");
+    scanf("%d", &populacao);
     
-    printf("digite a area: \n");
+    printf("digite a Área: \n");
     scanf("%f", &area);
 
-    printf("digite a populacao: \n");
-    scanf("%d", &populacao);
-
-    printf("digite o PIB: \n");
+    printf("digite a PIB: \n");
     scanf("%d", &PIB);
 
-    printf("Nome da cidade: %s \n", nome);
-    printf("Area total: %f \n", area);
-    printf("Codigo da cidade: %s \n", codigo);
-    printf("Populacao: %d \n", populacao);
-    printf("PIB: %d \n", PIB);
-    
+    printf("digite o numero de Pontos turisticos: \n");
+    scanf("%d", &pontosturisticos);
 
+    densidadepopulacional = (float) (populacao / area);
+    PIBpercapita = (float) (PIB / populacao);
+
+    printf("--- Dados da cidade --- \n\n");
+
+    printf("Nome da cidade: %s \n", nome);
+    printf("População: %d \n", populacao);
+    printf("Área da cidade : %.2f \n", area);
+    printf("PIB : %d \n", PIB);
+    printf("Números de pontos turísticos: %d \n", pontosturisticos);
+    printf("A Densidade populacional é : %f \n", densidadepopulacional);
+    printf("O PIB Per Capita é : %.2f \n\n\n", PIBpercapita);
+
+
+    //printf("A densidade demografica é : %f \n", quociente);
+   // printf("O PIB per capito é : %f \n", quociente2);
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -49,5 +59,4 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
 }
