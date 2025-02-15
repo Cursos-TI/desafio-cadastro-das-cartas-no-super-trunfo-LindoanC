@@ -9,8 +9,8 @@
 int main() {    
     
     char nome[25];
-    int populacao, PIB, pontosturisticos;
-    float area, PIBpercapita, densidadepopulacional;
+    int populacao, turisticos;
+    float area, PIBpercapita, PIB, densidade;
 
     //float quociente = populacao / area;
    // float quociente2 = PIB / populacao;
@@ -26,12 +26,12 @@ int main() {
     scanf("%f", &area);
 
     printf("digite a PIB: \n");
-    scanf("%d", &PIB);
+    scanf("%f", &PIB);
 
     printf("digite o numero de Pontos turisticos: \n");
-    scanf("%d", &pontosturisticos);
+    scanf("%d", &turisticos);
 
-    densidadepopulacional = (float) (populacao / area);
+    densidade = (float) (populacao / area);
     PIBpercapita = (float) (PIB / populacao);
 
     printf("--- Dados da cidade --- \n\n");
@@ -40,8 +40,8 @@ int main() {
     printf("População: %d \n", populacao);
     printf("Área da cidade : %.2f \n", area);
     printf("PIB : %d \n", PIB);
-    printf("Números de pontos turísticos: %d \n", pontosturisticos);
-    printf("A Densidade populacional é : %f \n", densidadepopulacional);
+    printf("Números de pontos turísticos: %d \n", turisticos);
+    printf("A Densidade populacional é : %f \n", densidade);
     printf("O PIB Per Capita é : %.2f \n\n\n", PIBpercapita);
 
 
